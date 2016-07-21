@@ -27,7 +27,7 @@ cacheSolve <- function(x, ...) {
     return(im)
   }
   matrix_data <- x$get()
-  im <- mean(matrix_data, ...)
+  im <- solve(matrix_data, ...)
   x$set_inverted_matrix(im)
   im
 }
